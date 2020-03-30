@@ -162,7 +162,7 @@ def ghp_import(directory, message, remote='origin', branch='gh-pages', force=Fal
     if not try_rebase(remote, branch):
         log.error("Failed to rebase %s branch.", branch)
 
-    nojekyll = True
+    nojekyll = False
 
     run_import(directory, branch, message, nojekyll)
 
